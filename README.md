@@ -1,15 +1,16 @@
 # RECIPE  APP
 
 Description:
-This  is a recipe app that displays differnt ways of cooking a meal his is best for the chefs and the people who love to cooking also fr those who like inventing new recipes will be best helped in this app.
+This  is a recipe app that displays differnt ways of cooking a meal this is best for the chefs and the people who love to cook also for those who like inventing new  
+cooking ways will be able to  benefit from here.
 
 ## Links
 
 - [Repo](<https://github.com/Allan-Ngugi/React-project> ")
 
-- [Backend]("https://recipe-app-an.herokuapp.com/recipe")
+- [Backend](<https://recipe-app-an.herokuapp.com/recipe>")
 
--[Frontend]("https://app.netlify.com/sites/leafy-crepe-cf22dd")
+-[Frontend](<https://app.netlify.com/sites/leafy-crepe-cf22dd>")
 
 ## Available Commands
 
@@ -52,9 +53,6 @@ For running the server file on you can use this command.
 ## Author
 
 ALLAN NGUGI
-
-- [Repo]("https://github.com/Allan-Ngugi/React-project")
-- [Email]("allan.ngugi@student.moringaschool.com")
 
 ## 🤝 Support
 
