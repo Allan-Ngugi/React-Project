@@ -7,9 +7,13 @@ This  is a recipe app that displays differnt ways of cooking a meal his is best 
 
 - [Repo](<https://github.com/Allan-Ngugi/React-project> ")
 
-- [API](<https://edamam-recipe-search.p.rapidapi.com/search> "API")
+- [Backend]("https://recipe-app-an.herokuapp.com/recipe")
+
+-[Frontend]("https://app.netlify.com/sites/leafy-crepe-cf22dd")
 
 ## Available Commands
+
+ site ID [b61fdbcb-dac4-448d-9dfc-7da366e33ff8]
 
 ### `npm start" : "react-scripts start"`
 
@@ -49,9 +53,8 @@ For running the server file on you can use this command.
 
 ALLAN NGUGI
 
-- [Profile]("https://github.com/Allan-Ngugi/React-project")
+- [Repo]("https://github.com/Allan-Ngugi/React-project")
 - [Email]("allan.ngugi@student.moringaschool.com")
-- [Website]("https://recipe-app-an.herokuapp.com/recipe")
 
 ## 🤝 Support
 

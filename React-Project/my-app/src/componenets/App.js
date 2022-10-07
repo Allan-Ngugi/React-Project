@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+//import './App.css';
 import Form from "./Form";
 import Recipes from "./Recipes";
 class App extends Component {
@@ -7,9 +7,9 @@ state = {
     recipes: []
 }
 getRecipe = async (e) => {
-    const recipeName = e.target.elements.recipeName.value;
+    const recipeName = e.target.elements.recipeName.id;
     e.preventDefault();
-    const api_call = await fetch(`https://recipe-app-an.herokuapp.com/recipe`);
+    const api_call = await fetch(`https://recipe-app-an.herokuapp.com/recipe`,recipeName);
 
     const data = await api_call.json();
     this.setState({ recipes: data.recipes });
