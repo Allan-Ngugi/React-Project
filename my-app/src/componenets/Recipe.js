@@ -8,9 +8,9 @@ class Recipe extends React.Component {}
 state = {
     activeRecipe: []
 }
-// componentDidMount = async () => {
-//     const title = this.props.location.state.recipe;
-//     const req = await fetch(`https://edamam-recipe-search.p.rapidapi.com/search?q=chicken`);
+componentDidMount = async () => {}
+    const title = this.props.location.state.recipe;
+    const req = await fetch(`https://edamam-recipe-search.p.rapidapi.com/search?q=chicken`);
     
 //     const res = await req.json();
 //     this.setState({ activeRecipe: res.recipes[0] });
