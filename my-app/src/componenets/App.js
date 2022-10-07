@@ -3,16 +3,16 @@ import '../App.css';
 import Form from "./Form";
 import Recipes from "./Recipes";
 
-// const API_KEY = "Your-api-key";
+const API_KEY = "Your-api-key";
 
-// class App extends Component {
-// state = {
-//     recipes: []
-// }
-// getRecipe = async (e) => {
-//     const recipeName = e.target.elements.recipeName.value;
-//     e.preventDefault();
-//     const api_call = await fetch(`https://edamam-recipe-search.p.rapidapi.com/search?q=chicken`);
+class App extends Component {
+state = {
+    recipes: []
+}
+getRecipe = async (e) => {
+    const recipeName = e.target.elements.recipeName.value;
+    e.preventDefault();
+    const api_call = await fetch(`https://edamam-recipe-search.p.rapidapi.com/search?q=chicken`);
     
 //     const data = await api_call.json();
 //     this.setState({ recipes: data.recipes });
