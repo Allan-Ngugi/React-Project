@@ -1,8 +1,5 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-
-//const API_KEY = "Your-api-key";
-
 class Recipe extends React.Component {
 state = {
     activeRecipe: []

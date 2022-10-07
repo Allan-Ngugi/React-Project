@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 //import './App.css';
 import Form from "./Form";
 import Recipes from "./Recipes";
-
-//const API_KEY = "Your-api-key";
-
 class App extends Component {
 state = {
     recipes: []
