@@ -9,12 +9,12 @@ state = {
 }
 componentDidMount = async () => {
     const title = this.props.location.state.recipe;
-    //const req = await fetch(`https://recipe-app-an.herokuapp.com/recipe`);
-   // console.log(req.data);  
+    const req = await fetch(`https://recipe-app-an.herokuapp.com/recipe`);
+console.log(req.data);  
     
-    // const res = await req.json();
-    // this.setState({ activeRecipe: res.recipes[0] });
-    // console.log(this.state.activeRecipe);
+    const res = await req.json();
+    this.setState({ activeRecipe: res.recipes[0] });
+    console.log(this.state.activeRecipe);
 }
 render() {
     const recipe = this.state.activeRecipe;
