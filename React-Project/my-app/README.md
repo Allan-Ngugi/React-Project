@@ -3,7 +3,7 @@
 Description:
 This  is a recipe app that displays differnt ways of cooking a meal his is best for the chefs and the people who love to cooking also fr those who like inventing new recipes will be best helped in this app.
 
-<!-- ## Links
+## Links
 
 - [Repo](<https://github.com/Allan-Ngugi/React-project> ")
 
@@ -51,10 +51,10 @@ ALLAN NGUGI
 
 - [Profile]("https://github.com/Allan-Ngugi/React-project")
 - [Email]("allan.ngugi@student.moringaschool.com")
-- [Website]("  ")
+- [Website]("https://recipe-app-an.herokuapp.com/recipe")
 
 ## 🤝 Support
 
 Contributions, issues, and feature requests are welcome!
 
-Give a ⭐️ if you like this project! -->
+Give a ⭐️ if you like this project!
