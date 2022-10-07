@@ -2,12 +2,12 @@ import React from 'react';
 
 import { Link } from "react-router-dom";
 
-// const API_KEY = "Your-api-key";
+const API_KEY = "Your-api-key";
 
-// class Recipe extends React.Component {
-// state = {
-//     activeRecipe: []
-// }
+class Recipe extends React.Component {}
+state = {
+    activeRecipe: []
+}
 // componentDidMount = async () => {
 //     const title = this.props.location.state.recipe;
 //     const req = await fetch(`https://edamam-recipe-search.p.rapidapi.com/search?q=chicken`);
