@@ -1,39 +1,32 @@
-import React from 'react';
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+export default function Recipes({recipe}) {
+const URL = ("https://edamam-recipe-search.p.rapidapi.com/search?q=chicken")
+const [recipes,setrecipe] = useState()
+useEffect(() => {
+    const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'd4d6e6e735msha258d226ff45410p1a26a9jsnd18102fab690',
+		'X-RapidAPI-Host': 'edamam-recipe-search.p.rapidapi.com'
+	}
+};
 
-const recipes = [ ];
-const Recipes = props => (
-    <div className="container">
-    <div className="row">
-    {props.recipes && recipes.map((Recipes) => {
-        
-    return (
-        <div key={recipes.title} className="col-md-4" style={{ marginBottom:"2rem" }}>
-        <div className="recipes__box">
-            <img 
-            className="recipe__box-img" 
-            src={recipes.image_url} 
-            alt={recipes.title}/>
-            <div className="recipe__text">
-                <h5 className="recipes__title">
-                { Recipes.title.length < 20 ? `${recipes.title}` : `${recipes.title.substring(0, 25)}...` }
-                </h5>
-                <p className="recipes__subtitle">Publisher: <span>
-                { Recipes.publisher }
-                </span></p>
-            </div>
-            <button className="recipe_buttons">
-                <Link to={{ 
-                pathname: `/recipe/${Recipes.recipe_id}`,
-                state: { recipe: Recipes.title }
-                }}>View Recipe</Link>
-            </button>
-        </div>
-        </div>
-    );
-    })}
+fetch(URL, options)
+	.then(resp => resp.json())
+	.then(resp => console.log(resp))
+    .then(setrecipe);
+}, []);
+console.log (recipes)
+return (
+    <div className="ui four column grid">
+        <div className="row">
+    <div className="recipes_box">
+    {recipes && recipes.map(recipe => <Recipes key={recipe.id}recipe={recipe} 
+    yoh rada
+    />)}
+    
     </div>
-</div>
+    </div>
+    </div>
 );
-
-export default Recipes;
+}
