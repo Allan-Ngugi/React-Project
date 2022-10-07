@@ -1,9 +1,9 @@
-// import React from 'react';
-// import { BrowserRouter } from 'react-router-dom';
-// import {Switch } from 'react-router-dom';
-// import { Route } from 'react-router-dom';
-// import App from './App';
-// import Recipe from "./Recipe";
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import {Switch } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+import App from './App';
+import Recipe from "./Recipe";
 
 // const Router = () => (
 // <BrowserRouter>
