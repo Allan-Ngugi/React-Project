@@ -6,8 +6,6 @@ cooking ways will be able to  benefit from here.
 
 ## Links
 
-- [Repo](<https://github.com/Allan-Ngugi/React-project> ")
-
 - [Backend](<https://recipe-app-an.herokuapp.com/recipe>")
 
 -[Frontend](<https://app.netlify.com/sites/leafy-crepe-cf22dd>")
@@ -42,8 +40,7 @@ For running the server file on you can use this command.
 ## Built With
 
 - JavaScript
-- Node
-- NPM
+- Node.js
 -React
 
 ## Future Updates
