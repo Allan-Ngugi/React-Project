@@ -12,8 +12,6 @@ cooking ways will be able to  benefit from here.
 
 ## Available Commands
 
- site ID [b61fdbcb-dac4-448d-9dfc-7da366e33ff8]
-
 ### `npm start" : "react-scripts start"`
 
 The app is built using `create-react-app` so this command Runs the app in Development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser. You also need to run the server file as well to completely run the app. The page will reload if you make edits.
