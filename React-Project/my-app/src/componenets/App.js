@@ -7,18 +7,18 @@ state = {
     recipes: []
 }
 getRecipe = async (e) => {
-    //const recipeName = e.target.elements.recipeName.id;
+    const recipeName = e.target.elements.recipeName.id;
     e.preventDefault();
-    const api_call = await fetch(`https://edamam-recipe-search.p.rapidapi.com/search?q=chicken`);
+    const api_call = await fetch(`https://recipe-app-an.herokuapp.com/recipe`,recipeName);
 
     const data = await api_call.json();
     this.setState({ recipes: data.recipes });
     console.log(this.state.recipes);
 }
 componentDidMount = () => {
-    //const json = localStorage.getItem("recipes");
-    //const recipes = JSON.parse(json);
-    //this.setState({ recipes });
+    // const json = localStorage.getItem("recipes");
+    // const recipes = JSON.parse(json);
+    // this.setState({ recipes });
 }
 componentDidUpdate = () => {
     const recipes = JSON.stringify(this.state.recipes);

@@ -1,32 +1,33 @@
 import React, { useState, useEffect } from "react";
-export default function Recipes({recipe}) {
-const URL = ("https://edamam-recipe-search.p.rapidapi.com/search?q=chicken")
-const [recipes,setrecipe] = useState()
-useEffect(() => {
-    const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'd4d6e6e735msha258d226ff45410p1a26a9jsnd18102fab690',
-		'X-RapidAPI-Host': 'edamam-recipe-search.p.rapidapi.com'
-	}
-};
+import  '../App.css';
+export default function Recipes({ recipe }) {
+    const URL = ("https://recipe-app-an.herokuapp.com/recipe")
+    const [recipes, setrecipe] = useState([])
+    useEffect(() => {
 
-fetch(URL, options)
-	.then(resp => resp.json())
-	.then(resp => console.log(resp))
-    .then(setrecipe);
-}, []);
-console.log (recipes)
-return (
-    <div className="ui four column grid">
-        <div className="row">
-    <div className="recipes_box">
-    {recipes && recipes.map(recipe => <Recipes key={recipe.id}recipe={recipe} 
-    yoh rada
-    />)}
-    
-    </div>
-    </div>
-    </div>
-);
+        fetch(URL)
+            .then(resp => resp.json())
+            .then(item=> setrecipe(item));
+    }, []);
+    console.log (recipes)
+    const allrecipes = recipes.map((item, index)=>{
+        return (
+        <div>
+            <h1>{item.title}</h1>
+            {/* <p>{  item.publisher}</p> */}
+            <img src={item.image} alt="I made thisArg "></img> 
+        </div>)
+    })
+
+
+    return (
+        <div className="ui four column grid">
+            <div className="row">
+                <div className="recipes_box">
+                    {allrecipes}
+
+                </div>
+            </div>
+        </div>
+    );
 }

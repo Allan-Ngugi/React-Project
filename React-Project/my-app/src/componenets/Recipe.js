@@ -8,7 +8,7 @@ componentDidMount = async () => {
 
 
     //const title = this.props.location.state.recipe;
-    const req = await fetch(`https://edamam-recipe-search.p.rapidapi.com/search?q=chicken`);
+    const req = await fetch(`(https://recipe-app-an.herokuapp.com/recipe"`);
     console.log(req);  
 
      //   const res = await req.json();
