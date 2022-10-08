@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-//import './App.css';
 import Form from "./Form";
 import Recipes from "./Recipes";
+import "../App.css";
 class App extends Component {
 state = {
     recipes: []
@@ -14,11 +14,6 @@ getRecipe = async (e) => {
     const data = await api_call.json();
     this.setState({ recipes: data.recipes });
     console.log(this.state.recipes);
-}
-componentDidMount = () => {
-    // const json = localStorage.getItem("recipes");
-    // const recipes = JSON.parse(json);
-    // this.setState({ recipes });
 }
 componentDidUpdate = () => {
     const recipes = JSON.stringify(this.state.recipes);
@@ -36,5 +31,4 @@ render() {
     );
 }
 }
-
 export default App;

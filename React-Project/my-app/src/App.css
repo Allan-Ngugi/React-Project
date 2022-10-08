@@ -1,10 +1,13 @@
 body {
-  background: #f3f3f3;
+  background-color:greenyellow;
 }
 
 img {
-  width: 50%;
-  height: 50%;
+  width: 30%;
+  height: 30%;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 a {
@@ -20,11 +23,22 @@ button:focus {
 }
 
 .App-header {
-  background-color: #2c3e50;
+  background-color:mediumseagreen;
   height: 90px;
   padding: 30px;
   color: white;
   margin-bottom: 2rem;
+  text-decoration: underline;
+  font-size: large;
+  font-weight: 900;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  box-shadow: 2px 6px 6px gray;
+  border-radius: 17px;
+  text-shadow: 2px 2px 2px black;
+}
+.App-header:hover{
+  color: aqua;
 }
 
 .App-title {
@@ -53,14 +67,14 @@ button:focus {
 }
 
 .recipe__text {
-  margin-left: 15px;
+  margin-left: 100%;
 }
 
 .recipes__title {
-  color: #e74c3c;
+  color: matte black;
   text-transform: uppercase;
   font-size: 1.1rem;
-  padding: 1.8rem 0 0.2rem 0;
+  padding: 1.8rem 0 0.;
 }
 
 .recipes__subtitle {
@@ -75,6 +89,7 @@ button:focus {
   font-weight: 400;
   font-size: 0.8rem;
   letter-spacing: 1px;
+  font-weight: 900;
 }
 
 .form__input {
@@ -101,6 +116,7 @@ button:focus {
 
 input[type="text"] {
   outline: none;
+  font-weight: 900;
 }
 
 input:-webkit-autofill {
@@ -128,6 +144,8 @@ input:-webkit-autofill {
   text-transform: uppercase;
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  font-size: large;
+
 }
 
 .active-recipe__publisher span {
@@ -154,4 +172,5 @@ input:-webkit-autofill {
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
+  font-weight: 900;
 }

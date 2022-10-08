@@ -1,17 +1,15 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import '../App.css';
 class Recipe extends React.Component {
 state = {
     activeRecipe: []
 }
 componentDidMount = async () => {
 
-
-    //const title = this.props.location.state.recipe;
     const req = await fetch(`(https://recipe-app-an.herokuapp.com/recipe"`);
     console.log(req);  
 
-     //   const res = await req.json();
     this.setState({ activeRecipe: req.recipes[0] });
     console.log(this.state.activeRecipe);
 }

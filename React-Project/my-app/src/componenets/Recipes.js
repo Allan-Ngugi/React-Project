@@ -12,21 +12,18 @@ export default function Recipes({ recipe }) {
     console.log (recipes)
     const allrecipes = recipes.map((item, index)=>{
         return (
-        <div>
+        <div className="recipe_box">
             <h1>{item.title}</h1>
-            {/* <p>{  item.publisher}</p> */}
+            <a href={item.publisher}>Recipe Link</a>
             <img src={item.image} alt="I made thisArg "></img> 
         </div>)
     })
-
-
     return (
         <div className="ui four column grid">
             <div className="row">
                 <div className="recipes_box">
                     {allrecipes}
-
-                </div>
+        </div>
             </div>
         </div>
     );
